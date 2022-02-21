@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="ss1">
+    <input type="text" id="ss2">
+    <br>
+    
+    <button onclick="tinh()">addition(+)</button>
+    <button onclick="tinh1()">subtracition(-)</button>
+    <button onclick="tinh2()">multiplication(x)</button>
+    <button onclick="tinh3()">division(/)</button>
+
+
+    <p>Result Division</p>
+    <h1 id="kq"></h1>
+    
+    ></h1>
+    <script>
+        function tinh(){
+            let a =+document.getElementById('ss1').value; 
+            let b =+document.getElementById('ss2').value;
+           
+            document.getElementById("kq").innerHTML=a+b;
+            
+        }
+        function tinh1(){
+            let a =+document.getElementById('ss1').value; 
+            let b =+document.getElementById('ss2').value;
+            document.getElementById("kq").innerHTML=a-b;
+
+        }
+        function tinh2(){
+            let a =+document.getElementById('ss1').value; 
+            let b =+document.getElementById('ss2').value;
+            document.getElementById("kq").innerHTML=a*b;
+        }
+        function tinh3(){
+            let a =+document.getElementById('ss1').value; 
+            let b =+document.getElementById('ss2').value;
+            document.getElementById("kq").innerHTML=a/b;
+
+        }
+    </script>
+</body>
+</html>
